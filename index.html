@@ -1,230 +1,194 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learning Portfolio</title>
 
-    <title>My Learning Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
 
-    <!-- Bootstrap CSS -->
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    >
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- CSS ที่เขียนเอง -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <header class="site-header">
+    <nav class="navbar container py-3" aria-label="เมนูหลัก">
+      <a class="navbar-brand fw-bold" href="#about">Learning Portfolio</a>
 
-    <!-- Header -->
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container">
-                <a class="navbar-brand" href="#">My Portfolio</a>
-            </div>
-        </nav>
-    </header>
+      <div class="nav-links">
+        <a href="#about">About Me</a>
+        <a href="#portfolio">My Portfolio</a>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Main Content -->
-    <main>
+  <main>
+    <section id="about" class="container about-section">
+      <p class="eyebrow">ABOUT ME</p>
 
-        <!-- About Me -->
-        <section id="about" class="container py-5">
-            <h1>About Me</h1>
+      <div class="row align-items-center g-4 mt-2">
+        <div class="col-12 col-md-4">
+          <img
+            src="media/profile.JPG"
+            alt="รูปถ่ายแนะนำตัว"
+            class="profile-photo"
+          >
+        </div>
 
-            <h2>Benyapa Pattanakijkan</h2>
+        <div class="col-12 col-md-8">
+          <p class="about-intro">
+            <p>สวัสดีค่ะ ดิฉันนางสาวเบญญาภา พัฐนกิจการ </p>
+            <p>กำลังศึกษาอยู่ที่มหาวิทยาลัยธรรมศาสตร์ ศูนย์รังสิต</p>
+            <p>คณะวิทยาศาสตร์และเทคโนโลยี สาขาวิทยาการคอมพิวเตอร์ ชั้นปีที่ 1</p>
+        </div>
+      </div>
 
-            <p>
-                Faculty of Science and Technology, Computer Science,
-                Thammasat University, Rangsit Center
-            </p>
+      <div class="row g-4 mt-2">
+        <div class="col-12 col-lg-6">
+          <section class="info-card h-100">
+            <h2>สนใจเกี่ยวกับ</h2>
+            <ul>
+              <li>เทคโนโลยี</li>
+              <li>การเขียนโค้ด</li>
+              <li>การออกแบบเว็บไซต์</li>
+            </ul>
+          </section>
+        </div>
 
-            <p>
-                I am interested in Web Development, Technology, and Programming.
-                I enjoy learning new technologies and developing my skills through
-                practical projects.
-            </p>
-        </section>
+        <div class="col-12 col-lg-6">
+          <section class="info-card h-100">
+            <h2>งานอดิเรก</h2>
+            <ul>
+              <li>ฟังเพลง</li>
+              <li>เล่นเปียโน</li>
+              <li>ออกแบบกราฟิก</li>
+              <li>ถ่ายรูป</li>
+            </ul>
+          </section>
+        </div>
+      </div>
 
-        <!-- My Portfolio -->
-        <section id="portfolio" class="container py-5">
-            <h2>My Portfolio</h2>
+      <section class="goal-card mt-4">
+        <h2>เป้าหมายและสิ่งที่อยากพัฒนาในอนาคต</h2>
+        <p>
+          อยากพัฒนาทักษะการเขียนโปรแกรมและการออกแบบเว็บไซต์
+          ให้สามารถสร้างเว็บไซต์ที่สวยงามและใช้งานง่าย
+        </p>
+      </section>
+    </section>
 
-            <div class="row g-4">
+    <section id="portfolio" class="portfolio-section">
+      <div class="container">
+        <p class="eyebrow">MY PORTFOLIO</p>
+        <h2 class="display-6 fw-bold section-title">ผลงานและประสบการณ์</h2>
 
-                <!-- Portfolio Item 1 -->
-                <div class="col-12 col-md-6">
-                    <article class="card h-100">
-                        <div class="card-body">
+        <div class="row g-4">
+          <div class="col-12 col-lg-6">
+            <article class="portfolio-card h-100">
+              <p class="item-type">ภาระงานในชั้นเรียน</p>
+              <h3>CS100 A1:My First Learning Portfolio</h3>
 
-                            <h3 class="card-title">
-                                CS100 A1: My First Learning Portfolio
-                            </h3>
+              <dl class="item-details">
+                <dt>Date</dt>
+                <dd>30 สิงหาคม 2569</dd>
 
-                            <p>
-                                <strong>Type:</strong> Course Assignment
-                            </p>
+                <dt>Role</dt>
+                <dd>ผู้พัฒนาเว็บไซต์</dd>
 
-                            <p>
-                                <strong>Date:</strong> 30 Aug 2026
-                            </p>
+                <dt>Description</dt>
+                <dd>
+                  พัฒนาเว็บไซต์แฟ้มสะสมผลงานการเรียนรู้แบบหน้าเดียวด้วย HTML และ CSS
+                  เพื่อแนะนำตัวเอง นำเสนอความสนใจและเป้าหมายในการพัฒนาทักษะ
+                </dd>
 
-                            <p>
-                                <strong>Role:</strong> Individual Developer
-                            </p>
+                <dt>Skills</dt>
+                <dd>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>การจัดโครงสร้างเว็บไซต์ด้วย Semantic HTML</li>
+                    <li>การพัฒนาเว็บไซต์เบื้องต้น</li>
+                  </ul>
+                </dd>
 
-                            <p>
-                                <strong>Description:</strong>
-                                Developed a single-page Learning Portfolio website
-                                for CS100 using HTML and CSS. The project introduced
-                                me to structuring web pages and styling content
-                                with CSS.
-                            </p>
+                <dt>Reflection</dt>
+                <dd>
+                  ได้เรียนรู้พื้นฐานการสร้างเว็บไซต์ด้วย HTML และ CSS
+                  รวมถึงการจัดโครงสร้างเนื้อหาให้เหมาะสม ทำให้เข้าใจขั้นตอนการพัฒนาเว็บไซต์มากขึ้น
+                  และสามารถนำความรู้ไปต่อยอดในการออกแบบและพัฒนาเว็บไซต์ในอนาคต
+                </dd>
 
-                            <p>
-                                <strong>Skills:</strong>
-                                HTML, CSS, Semantic HTML
-                            </p>
+                <dt>Evidence</dt>
+                <dd>
+                  <a
+                    href="https://github.com/Benyapa-Pat/A1project0548"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub Repository
+                  </a>
+                </dd>
+              </dl>
 
-                            <h4>Reflection</h4>
+              <!-- TODO: เติม Reflection 4 ประเด็นจากข้อมูลจริงของคุณ -->
+            </article>
+          </div>
 
-                            <p>
-                                <strong>What I did:</strong>
-                                I created a Learning Portfolio website using HTML
-                                and CSS and organized the content into different
-                                sections.
-                            </p>
+          <div class="col-12 col-lg-6">
+            <article class="portfolio-card h-100">
+              <p class="item-type">งานอบรม</p>
+              <h3>อบรมเชิงปฏิบัติการ “STEM &amp; Robotics Camp”</h3>
 
-                            <p>
-                                <strong>What I learned:</strong>
-                                I learned how HTML provides the structure of a
-                                webpage and how CSS can be used to control the
-                                appearance and layout of the website.
-                            </p>
+              <dl class="item-details">
+                <dt>Date</dt>
+                <dd>20–21 มกราคม 2568</dd>
 
-                            <p>
-                                <strong>Challenge:</strong>
-                                One challenge was understanding how to structure
-                                the webpage correctly and manage file paths.
-                                I solved these problems by checking the code
-                                carefully and fixing each part step by step.
-                            </p>
+                <dt>Role</dt>
+                <dd>ผู้เข้าร่วมโครงการอบรมเชิงปฏิบัติการ</dd>
 
-                            <p>
-                                <strong>Next step:</strong>
-                                I would like to improve the visual design and
-                                make the website work better on different
-                                screen sizes.
-                            </p>
+                <dt>Description</dt>
+                <dd>
+                  เรียนรู้พื้นฐานการเขียนโปรแกรมเพื่อควบคุม LED และการใช้งานบอร์ด microbit
+                  รวมถึงการสั่งงานระบบขับเคลื่อนผ่านระบบ Radio ได้ลงมือปฏิบัติจริงในการออกแบบหุ่นยนต์เดินตามเส้น
+                  และควบคุมหุ่นยนต์ด้วยบอร์ด microbit เพื่อพัฒนาทักษะการเขียนโปรแกรม
+                  การคิดเชิงตรรกะ และการแก้ไขปัญหาอย่างเป็นระบบ
+                </dd>
 
-                            <p>
-                                <strong>Evidence:</strong>
-                                <a
-                                    href="https://github.com/Benyapa-Pat/A1project0548"
-                                    target="_blank"
-                                >
-                                    GitHub Repository: A1project0548
-                                </a>
-                            </p>
+                <dt>Skills</dt>
+                <dd>
+                  <ul>
+                    <li>Basic Programming</li>
+                    <li>Robotics</li>
+                    <li>microbit</li>
+                  </ul>
+                </dd>
 
-                        </div>
-                    </article>
-                </div>
 
-                <!-- Portfolio Item 2 -->
-                <div class="col-12 col-md-6">
-                    <article class="card h-100">
-                        <div class="card-body">
+                <dt>Evidence</dt>
+                <dd>
+                  <img
+                    src="media/certificate.jpg"
+                    alt="เกียรติบัตร STEM &amp; Robotics Camp"
+                    class="certificate-image"
+                  >
+                </dd>
+              </dl>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-                            <h3 class="card-title">
-                                CS100 Mini Exercise 2: User List
-                            </h3>
-
-                            <p>
-                                <strong>Type:</strong> Course Assignment
-                            </p>
-
-                            <p>
-                                <strong>Date:</strong> 27 Sep 2026
-                            </p>
-
-                            <p>
-                                <strong>Role:</strong> Individual Developer
-                            </p>
-
-                            <p>
-                                <strong>Description:</strong>
-                                Developed a responsive User List website using
-                                HTML, CSS, Bootstrap, and Git/GitHub. The project
-                                included user cards, search and navigation,
-                                and a theme toggle to improve the website
-                                experience.
-                            </p>
-
-                            <p>
-                                <strong>Skills:</strong>
-                                HTML, CSS, Bootstrap, Responsive Web Design,
-                                Git/GitHub
-                            </p>
-
-                            <h4>Reflection</h4>
-
-                            <p>
-                                <strong>What I did:</strong>
-                                I developed a User List website and used Bootstrap
-                                to create responsive user cards. I also added
-                                search and navigation features and connected the
-                                project to GitHub.
-                            </p>
-
-                            <p>
-                                <strong>What I learned:</strong>
-                                I learned how Bootstrap can help create responsive
-                                layouts and how Git/GitHub can be used to manage
-                                changes during web development.
-                            </p>
-
-                            <p>
-                                <strong>Challenge:</strong>
-                                One challenge was making the layout work properly
-                                on different screen sizes and understanding how
-                                Bootstrap classes affect the layout. I solved
-                                this by testing the website and adjusting the
-                                HTML and CSS step by step.
-                            </p>
-
-                            <p>
-                                <strong>Next step:</strong>
-                                I would like to improve the visual design,
-                                responsive layout, and learn more about
-                                Bootstrap components and web accessibility.
-                            </p>
-
-                            <p>
-                                <strong>Evidence:</strong>
-                                <a
-                                    href="https://github.com/Benyapa-Pat/UserList"
-                                    target="_blank"
-                                >
-                                    GitHub Repository: UserList
-                                </a>
-                            </p>
-
-                        </div>
-                    </article>
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="container py-4">
-        <p>CS100 Learning Portfolio</p>
-    </footer>
-
+  <footer class="site-footer">
+    <div class="container">
+      <small>Learning Portfolio</small>
+    </div>
+  </footer>
 </body>
 </html>
